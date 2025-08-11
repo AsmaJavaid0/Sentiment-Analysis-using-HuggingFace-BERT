@@ -20,10 +20,10 @@ The dataset is loaded into a pandas DataFrame and column names are standardized:
 
 sentiment.columns = ['id', 'city', 'label', 'tweets']
 Select Tweets Column
-Extract only the tweets for sentiment prediction:
+## Extract only the tweets for sentiment prediction:
 
 sentiments = sentiment[['tweets']]
-Sentiment Scoring Function
+## Sentiment Scoring Function
 Each tweet is tokenized and passed into the model to determine the sentiment:
 
 def sentiment_score(tweet):
